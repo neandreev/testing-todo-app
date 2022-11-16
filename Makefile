@@ -6,3 +6,6 @@ dev:
 
 build:
 	yarn build
+
+lint:
+	npx eslint .
