@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "testing-todo-app-a1e1d.firebaseapp.com",
   projectId: "testing-todo-app-a1e1d",
   storageBucket: "testing-todo-app-a1e1d.appspot.com",
