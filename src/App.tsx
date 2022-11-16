@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { initializeApp } from "firebase/app";
 import reactLogo from './assets/react.svg'
-import './App.css'
+import './App.less'
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
