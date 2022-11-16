@@ -1,6 +1,18 @@
 import { useState } from 'react'
+import { initializeApp } from "firebase/app";
 import reactLogo from './assets/react.svg'
 import './App.css'
+
+const firebaseConfig = {
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: "testing-todo-app-a1e1d.firebaseapp.com",
+  projectId: "testing-todo-app-a1e1d",
+  storageBucket: "testing-todo-app-a1e1d.appspot.com",
+  messagingSenderId: "970510945239",
+  appId: "1:970510945239:web:53a6b72774d883f84d1992"
+};
+
+const app = initializeApp(firebaseConfig);
 
 function App() {
   const [count, setCount] = useState(0)
