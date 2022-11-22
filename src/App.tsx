@@ -33,12 +33,6 @@ function App() {
           {currentTodoId && <TodoDetails />}
         </div>
       </div>
-      {/* <div style={{ display: 'grid', 'grid-template-columns': '300px 1fr' }}>
-        <div>filter</div>
-        <TodoInput />
-        <TodosList />
-        {currentTodoId && <TodoDetails />}
-      </div> */}
     </div>
   );
 }
