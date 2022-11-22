@@ -4,6 +4,10 @@ import {
 } from '../../store/todosSlice';
 import styles from './Todo.module.less';
 
+import { ReactComponent as DeleteIcon } from './delete.svg';
+import { ReactComponent as CheckBoxIcon } from './check_box.svg';
+import { ReactComponent as CheckBoxCheckedIcon } from './check_box_checked.svg';
+
 interface TodoProps {
   todo: TodoI;
 }
@@ -51,17 +55,18 @@ export default function Todo({ todo }: TodoProps) {
       <div className={todoClassName} onClick={handleSetCurrentTodo}>{todo.todo}</div>
       <div className={styles['todo-actions']}>
         <span
-          className="material-symbols-rounded icon"
+          className="icon"
           onClick={isTodoOpened ? handleCloseTask : handleOpenTask}
         >
           {
             isTodoOpened
-              ? <>&#xe835;</>
-              : <>&#xe834;</>
+              ? <CheckBoxIcon />
+              : <CheckBoxCheckedIcon />
           }
         </span>
-        <span onClick={handleDeleteTodo} className="material-symbols-rounded icon">
-          &#xe872;
+        {/* <span onClick={handleDeleteTodo} className="material-symbols-rounded icon"> */}
+        <span onClick={handleDeleteTodo} className="icon">
+          <DeleteIcon />
         </span>
       </div>
     </div>
