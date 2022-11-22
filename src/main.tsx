@@ -7,7 +7,7 @@ import App from './App';
 import Loader from './components/Loader';
 import store, { persistor } from './store';
 
-import '@fontsource/inter';
+import '@fontsource/inter/400.css';
 import './index.less';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
