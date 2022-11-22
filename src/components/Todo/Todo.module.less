@@ -1,0 +1,45 @@
+@import 'src/styles/vars';
+
+.todo-style {
+  flex-grow: 1;
+  cursor: pointer;
+  margin-left: 3px;
+  hyphens: auto;
+}
+
+.closed-todo {
+  .todo-style;
+
+  color: @accent;
+  text-decoration: line-through;
+}
+
+.expired-todo {
+  .todo-style;
+
+  color: @accent;
+}
+
+.opened-todo {
+  .todo-style;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 18px;
+  border-bottom: 1px solid @accent;
+  margin: 5px;
+  padding: 3px;
+}
+
+.todo:last-child {
+  border-bottom: none;
+}
+
+.todo-actions {
+  display: flex;
+  align-items: center;
+}

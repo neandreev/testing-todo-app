@@ -1,3 +1,76 @@
+@import 'styles/vars';
+
 #root {
-  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 960px;
+}
+
+.Header {
+  font-weight: 700;
+}
+
+.layout {
+  display: flex;
+  min-height: 560px;
+}
+
+.left-column {
+  width: 350px;
+  // background: @primary;
+  border: 1px solid @accent;
+  margin-right: -1px;
+}
+
+.right-column {
+  width: 100%;
+  // background: @secondary;
+  border: 1px solid @accent;
+}
+
+.material-symbols-rounded {
+  font-family: "Material Icons Rounded";
+  font-size: 22px;
+  color: @primary;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.icon {
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.icon:hover {
+  opacity: 0.8;
+}
+
+.input {
+  all: unset;
+  border-bottom: 2px solid @primary;
+  // border-radius: 5px;
+  font-size: 16px;
+  height: 26px;
+  margin: 2px;
+}
+
+.button {
+  all: unset;
+  cursor: pointer;
+  border: 2px solid @primary;
+  background-color: @primary;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 2px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
