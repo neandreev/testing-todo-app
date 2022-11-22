@@ -8,7 +8,6 @@ import Loader from './components/Loader';
 import store, { persistor } from './store';
 
 import '@fontsource/inter';
-import '@fontsource/material-icons-rounded';
 import './index.less';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
