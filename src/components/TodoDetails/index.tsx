@@ -11,7 +11,7 @@ import { storage } from '../../App';
 import styles from './TodoDetails.module.less';
 import TodoFile from '../TodoFile';
 import Loader from '../Loader';
-import { timezoneOffset } from '../../utils';
+import timezoneOffset from '../../utils';
 
 dayjs.locale('ru');
 dayjs.extend(localizedFormat);
