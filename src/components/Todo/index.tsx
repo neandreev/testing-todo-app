@@ -56,12 +56,12 @@ export default function Todo({ todo }: TodoProps) {
         >
           {
             isTodoOpened
-              ? 'check_box_outline_blank'
-              : 'check_box'
+              ? <>&#xe835;</>
+              : <>&#xe834;</>
           }
         </span>
         <span onClick={handleDeleteTodo} className="material-symbols-rounded icon">
-          delete
+          &#xe872;
         </span>
       </div>
     </div>
